@@ -29,6 +29,10 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93176410-6"></script>
 	<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-93176410-6');</script>
+	<script>
+		const onOrderButtonClick = () => ga('send', { hitType: 'event', eventCategory: 'order', eventAction: 'click', eventLabel: 'Order Button' });
+	</script>
+
 
 		<!-- CSS Normalize -->
 	<style type="text/css">
@@ -457,7 +461,7 @@
 	<div class="main">
 		<div id="boxed" class="center">
 			<img src="/images/2.jpg" />
-			<a class="center-items" href="https://gum.co/liberation-ebook?wanted=true" target="_blank">
+			<a class="center-items" href="https://gum.co/liberation-ebook?wanted=true" target="_blank" onclick="onOrderButtonClicked()">
 				<img class="order-button" src="/images/button1.png" />
 			</a>
 		</div>
